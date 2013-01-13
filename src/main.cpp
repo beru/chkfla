@@ -5,11 +5,12 @@
 #include <tchar.h>
 
 #include <windows.h>
-#include "unzip.h"
+#include "XUnzip.h"
 #include <vector>
 #include <stdint.h>
 
 #include "pugixml/pugixml.hpp"
+#include "checkDocument.h"
 
 int wmain(int argc, wchar_t* argv[])
 {
@@ -21,12 +22,12 @@ int wmain(int argc, wchar_t* argv[])
 		return 0;
 	}
 	
-	HZIP hz = OpenZip(argv[2], 0);
+	HZIP hz = OpenZip(argv[2], 0, ZIP_FILENAME);
 	if (!hz) {
 		puts("failed to open fla_filename.\n");
 		return 0;
 	}
-	ZIPENTRY entry;
+	ZIPENTRYW entry;
 	ZRESULT result;
 	int index;
 	const TCHAR* FILENAME = _T("PublishSettings.xml");
@@ -36,7 +37,7 @@ int wmain(int argc, wchar_t* argv[])
 		return 0;
 	}
 	std::vector<char> buff(entry.unc_size);
-	UnzipItem(hz, entry.index, &buff[0], buff.size());
+	result = UnzipItem(hz, entry.index, &buff[0], buff.size(), ZIP_MEMORY);
 	CloseZip(hz);
 	const char* pc = &buff[0];
 	
@@ -51,8 +52,8 @@ int wmain(int argc, wchar_t* argv[])
 	pugi::xml_document compareDoc;
 	parseResult = compareDoc.load_file(argv[1]);
 	
-	compare(compareDoc, dlaDoc);
+	checkDocument(flaDoc, compareDoc);
 	
-	creturn 0;
+	return 0;
 }
 

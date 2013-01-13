@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\libs;..\libzip;..\"
+				AdditionalIncludeDirectories="..\"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;NOCRYPT;NOUNCRYPT;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -62,7 +62,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="..\libs"
+				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				TargetMachine="1"
@@ -116,6 +116,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="..\"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -173,11 +174,15 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath="..\checkDocument.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\main.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\unzip.cpp"
+				RelativePath="..\XUnzip.cpp"
 				>
 			</File>
 		</Filter>
@@ -187,6 +192,10 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath="..\checkDocument.h"
+				>
+			</File>
+			<File
 				RelativePath="..\inttypes.h"
 				>
 			</File>
@@ -195,7 +204,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\unzip.h"
+				RelativePath="..\XUnzip.h"
 				>
 			</File>
 		</Filter>
@@ -218,14 +227,6 @@
 			</File>
 			<File
 				RelativePath="..\pugixml\pugixml.hpp"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="libs"
-			>
-			<File
-				RelativePath="..\libs\lib.cpp"
 				>
 			</File>
 		</Filter>
