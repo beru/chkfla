@@ -9,8 +9,7 @@ Adobe Flash‚ÌƒvƒƒWƒFƒNƒgƒtƒ@ƒCƒ‹iŠg’£Žq flaj‚ÌƒpƒuƒŠƒbƒVƒ…Ý’è‚ðŒŸ¸‚·‚éƒ\ƒtƒ
 
 > ”äŠrxmlƒtƒ@ƒCƒ‹–¼ flaƒtƒ@ƒCƒ‹–¼
 
-Adobe Flash CS4 ˆÈã‚Ìflaƒtƒ@ƒCƒ‹‚É‘Î‚µ‚ÄŽÀs‚µ‚Ä‰º‚³‚¢B
-flaƒtƒ@ƒCƒ‹‚ÍCS5ˆÈ~‚©‚çXFL‚Æ‚¢‚¤Œ`Ž®‚Ìƒtƒ@ƒCƒ‹ƒtƒH[ƒ}ƒbƒg‚ðÌ—p‚µ‚Ä‚¢‚ÄAflaƒtƒ@ƒCƒ‹‚ÍŽÀŽ¿zipƒA[ƒJƒCƒu‚Å‚·B
+flaƒtƒ@ƒCƒ‹‚ÍÅ‹ß‚Ìƒo[ƒWƒ‡ƒ“‚©‚çXFL‚Æ‚¢‚¤Œ`Ž®‚Ìƒtƒ@ƒCƒ‹ƒtƒH[ƒ}ƒbƒg‚ðÌ—p‚µ‚Ä‚¢‚ÄAzipƒA[ƒJƒCƒu‚É‚È‚Á‚Ä‚¢‚Ü‚·B
 ‚»‚Ì’†‚Ì PublishSettings.xml ‚Æ‚¢‚¤ƒpƒuƒŠƒbƒVƒ…Ý’è‚ð‹L˜^‚µ‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ðŒŸ¸‚µ‚Ä‚¢‚Ü‚·B
 
 ”äŠrxmlƒtƒ@ƒCƒ‹‚É‚ÍAPublishSettings.xml ‚Ì’†‚©‚ç”äŠr‚µ‚½‚¢•”•ª‚ÌXML‚ð‹Lq‚µ‚Ä‰º‚³‚¢B
