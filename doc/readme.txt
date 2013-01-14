@@ -1,1 +1,26 @@
-Now that you've read me, close this file.
+
+chkfla
+
+・このソフトについて
+Adobe Flashのプロジェクトファイル（拡張子 fla）のパブリッシュ設定を検査するソフトです。
+
+・使い方
+コマンドラインに2つのファイル名を渡して実行して下さい。
+
+> 比較xmlファイル名 flaファイル名
+
+Adobe Flash CS4 以上のflaファイルに対して実行して下さい。
+flaファイルはCS5以降からXFLという形式のファイルフォーマットを採用していて、flaファイルは実質zipアーカイブです。
+その中の PublishSettings.xml というパブリッシュ設定を記録しているファイルを検査しています。
+
+比較xmlファイルには、PublishSettings.xml の中から比較したい部分のXMLを記述して下さい。
+XMLのツリー構造は同じである必要があります。
+
+XMLの属性の検査は行っていません。
+
+・ソースコードについて
+https://github.com/beru/chkfla
+
+・変更履歴
+
+2013年1月14日 最初のバージョン
